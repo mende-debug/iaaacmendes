@@ -1,0 +1,15 @@
+// Configuração para publicar os sites de demonstração na Cloudflare
+// (Workers com arquivos estáticos). A Cloudflare roda "npx wrangler deploy",
+// que executa o build abaixo (monta a pasta dist) e publica essa pasta.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "demos-clientes",
+  "compatibility_date": "2025-01-01",
+  "build": {
+    "command": "bash deploy/montar-pages.sh"
+  },
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
