@@ -32,7 +32,23 @@ Cada site é **HTML, CSS e JavaScript puros**, sem build e sem dependências: ab
 
 ## Publicado na Cloudflare (grátis)
 
-Os sites estão no ar em **https://iaaacmendes.mendesisaacf.workers.dev/**, com um índice de todos eles. Cada site fica numa pasta: `/odonto/`, `/barbearia/`, `/academia/`, `/restaurante/`, `/cafeteria/`, `/advogado/` e `/advocacia/`.
+Cada site tem o próprio link, com o nome do estabelecimento:
+
+| Site | Link |
+|---|---|
+| Aurora Odontologia | https://aurora-odontologia.demo-clientes.workers.dev |
+| Dom Navalha Barbearia | https://dom-navalha-barbearia.demo-clientes.workers.dev |
+| Forja Academia | https://forja-academia.demo-clientes.workers.dev |
+| Casa Brasa | https://casa-brasa.demo-clientes.workers.dev |
+| Grão & Prosa | https://grao-e-prosa.demo-clientes.workers.dev |
+| Dr. Rafael Teixeira | https://rafael-teixeira-advogado.demo-clientes.workers.dev |
+| Almeida & Torres Advogados | https://almeida-torres-advogados.demo-clientes.workers.dev |
+
+**Publicar ou atualizar esses links:** rode `node deploy/workers/publicar.mjs`, ou `node deploy/workers/publicar.mjs odonto` para um site só. O script precisa das variáveis `CLOUDFLARE_API_TOKEN` (permissão *Workers Scripts: Edit*) e `CLOUDFLARE_ACCOUNT_ID`. Os nomes dos links ficam em `deploy/workers/sites.json`.
+
+**Índice com todos os sites juntos:** https://iaaacmendes.demo-clientes.workers.dev/ (cada site numa pasta: `/odonto/`, `/barbearia/` etc.).
+
+**Onde ver os links no painel:** Cloudflare → **Workers & Pages** → clique no projeto → botão **Visit**, ou **Settings → Domains & Routes → workers.dev**.
 
 A Cloudflare está ligada a este repositório. **Cada envio (`git push`) para a branch `main` republica tudo sozinho, em 1 a 2 minutos.** O arquivo `wrangler.jsonc` roda `deploy/montar-pages.sh`, que monta a pasta `dist` com os sites, a página-índice, a página 404, o `robots.txt` e o cabeçalho `X-Robots-Tag: noindex`.
 
