@@ -3,7 +3,7 @@
 // que executa o build abaixo (monta a pasta dist) e publica essa pasta.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "demos-clientes",
+  "name": "iaaacmendes",
   "compatibility_date": "2025-01-01",
   "build": {
     "command": "bash deploy/montar-pages.sh"

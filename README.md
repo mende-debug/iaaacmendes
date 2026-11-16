@@ -30,7 +30,21 @@ Cada site é **HTML, CSS e JavaScript puros**, sem build e sem dependências: ab
 
 ---
 
-## Publicar na Oracle Cloud (Always Free)
+## Publicado na Cloudflare (grátis)
+
+Os sites estão no ar em **https://iaaacmendes.mendesisaacf.workers.dev/**, com um índice de todos eles. Cada site fica numa pasta: `/odonto/`, `/barbearia/`, `/academia/`, `/restaurante/`, `/cafeteria/`, `/advogado/` e `/advocacia/`.
+
+A Cloudflare está ligada a este repositório. **Cada envio (`git push`) para a branch `main` republica tudo sozinho, em 1 a 2 minutos.** O arquivo `wrangler.jsonc` roda `deploy/montar-pages.sh`, que monta a pasta `dist` com os sites, a página-índice, a página 404, o `robots.txt` e o cabeçalho `X-Robots-Tag: noindex`.
+
+**Demo para um cliente novo:** copie a pasta de um modelo com o nome do cliente (ex.: `sites/clinica-sorriso`), edite o `CONFIG` em `js/app.js` e envie para o GitHub. Ela fica em `…workers.dev/clinica-sorriso/` e aparece no índice automaticamente.
+
+**Domínio próprio:** no painel da Cloudflare, abra o projeto → **Settings → Domains & Routes → Add → Custom domain**. O domínio precisa estar gerenciado pela Cloudflare (o cadastro é grátis).
+
+---
+
+## Alternativa: publicar numa VPS ou na Oracle Cloud (Always Free)
+
+Os scripts abaixo funcionam em qualquer servidor Ubuntu: Oracle, Hetzner, Hostinger, DigitalOcean etc.
 
 O servidor usa o **Caddy**, que gera e renova o HTTPS sozinho. Uma VM grátis da Oracle aguenta centenas de sites como estes.
 
