@@ -1,0 +1,12 @@
+{
+  "_comentario": "Cada site vira um Worker com o nome do estabelecimento: https://<nome>.<seu-subdominio>.workers.dev",
+  "sites": [
+    { "pasta": "odonto",      "nome": "aurora-odontologia" },
+    { "pasta": "barbearia",   "nome": "dom-navalha-barbearia" },
+    { "pasta": "academia",    "nome": "forja-academia" },
+    { "pasta": "restaurante", "nome": "casa-brasa" },
+    { "pasta": "cafeteria",   "nome": "grao-e-prosa" },
+    { "pasta": "advogado",    "nome": "rafael-teixeira-advogado" },
+    { "pasta": "advocacia",   "nome": "almeida-torres-advogados" }
+  ]
+}
