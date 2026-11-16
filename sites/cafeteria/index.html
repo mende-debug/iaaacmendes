@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grão &amp; Prosa — Cafés especiais</title>
+  <meta name="description" content="Cafeteria de cafés especiais com torra própria, bolos caseiros e pão de queijo quentinho. Peça pelo WhatsApp para entrega ou retirada.">
+  <!-- Site de demonstração: não indexar nos buscadores -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#24160f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2324160f'/%3E%3Cpath fill='%23f6efe6' d='M15 28h30v6a14 14 0 01-14 14h-2a14 14 0 01-14-14z'/%3E%3Cpath fill='none' stroke='%23f6efe6' stroke-width='3' d='M45 31h3a5 5 0 010 10h-4'/%3E%3Cpath fill='none' stroke='%23d79a52' stroke-width='3' stroke-linecap='round' d='M25 22c-2-3 2-5 0-8M33 22c-2-3 2-5 0-8'/%3E%3Crect x='13' y='51' width='36' height='3' rx='1.5' fill='%23d79a52'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Logo: xícara com vapor e grão -->
+    <symbol id="logo" viewBox="0 0 64 64">
+      <path fill="currentColor" d="M13 27h32v6.5C45 42 38.3 49 30 49h-2c-8.3 0-15-7-15-15.5z"/>
+      <path fill="none" stroke="currentColor" stroke-width="3.2" d="M45 30.5h3.2a5.3 5.3 0 010 10.6H44"/>
+      <rect fill="currentColor" x="9" y="52" width="40" height="3.4" rx="1.7"/>
+      <path fill="none" stroke="var(--logo-steam, #d79a52)" stroke-width="3" stroke-linecap="round" d="M23 21c-2.4-3 2.4-5.2 0-8.5M31 21c-2.4-3 2.4-5.2 0-8.5"/>
+      <g transform="rotate(-30 29 37)"><ellipse cx="29" cy="37" rx="4" ry="6" fill="var(--logo-bean, #24160f)"/><path d="M29 31.4c-1.6 2.2 1.6 3.4 0 5.6s1.6 3.4 0 5.6" fill="none" stroke="currentColor" stroke-width="1.3"/></g>
+    </symbol>
+    <symbol id="i-bean" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="12" rx="6.5" ry="9" transform="rotate(30 12 12)"/><path d="M15.5 5.5c-3 2-1 5.5-4 7s-1.5 4.5-4 6"/></g></symbol>
+    <symbol id="i-cup" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h13v3a6 6 0 01-6 6h-1a6 6 0 01-6-6z"/><path d="M17 11h1.5a2.5 2.5 0 010 5H17M3 21h16M9 3c-1 1.3 1 2.2 0 3.6M13 3c-1 1.3 1 2.2 0 3.6"/></g></symbol>
+    <symbol id="i-v60" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16l-6 8h-4z"/><path d="M10 13v2h4v-2M6 19h12l-1 2H7z"/><path d="M12 15v2"/></g></symbol>
+    <symbol id="i-ice" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h12l-1.5 15h-9z"/><path d="M14 2l-2 4M9 11h3v3H9zM12.5 14h3v3h-3z"/></g></symbol>
+    <symbol id="i-cake" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v8H4z"/><path d="M4 16c2 1.5 4-1 6 .5s4-1 6 .5 3 0 4-.5M7 13V9h10v4M12 9V6M12 3.5v.5"/></g></symbol>
+    <symbol id="i-croissant" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15c0-5 4-9 9-9s9 4 9 9l-3 2-2-6-4-1-4 1-2 6z"/><path d="M8 11l2 6M16 11l-2 6"/></g></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15z"/><path d="M5 19l8-8"/></g></symbol>
+    <symbol id="i-fire" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12.5 2.5c.5 3.3 5 5 5 10.5a5.5 5.5 0 01-11 0c0-2.5 1.2-4.1 2.5-5.4.1 1.7.8 2.6 1.6 3-.5-3.2.7-6 1.9-8.1z"/></symbol>
+    <symbol id="i-grinder" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10h12v11H6zM8 10l1-4h6l1 4M12 6V3h5"/><circle cx="12" cy="15.5" r="2.5"/></g></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a15 15 0 0120 0M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0"/><circle cx="12" cy="19.5" r=".8" fill="currentColor"/></g></symbol>
+    <symbol id="i-moto" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M9 17h6l2-6h-4l-2 3H6M14 7h3l1 4"/></g></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 8h14l-1 13H6L5 8zM9 8V6a3 3 0 016 0v2"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16v11H4zM3 7h18v3H3zM12 7v14"/><path d="M12 7c-1.5-3-5-3.5-5-1.5S10 7 12 7zM12 7c1.5-3 5-3.5 5-1.5S14 7 12 7z"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11zM12 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zM12 16a4 4 0 100-8 4 4 0 000 8zM17.5 6.5h.01"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4 7h3l2-3h6l2 3h3v13H4zM12 17a4 4 0 100-8 4 4 0 000 8z"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="topo">
+  <div class="container header__inner">
+    <a href="#topo" class="brand" aria-label="Grão &amp; Prosa — início">
+      <span class="brand__mark"><svg><use href="#logo"/></svg></span>
+      <span class="brand__text"><span data-cfg="nome">Grão &amp; Prosa</span><small data-cfg="slogan">Cafés especiais</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#graos">Nossos grãos</a>
+      <a href="#casa">A casa</a>
+      <a href="#visite">Visite</a>
+      <a href="#cardapio" class="btn btn--sm btn--outline-light nav__cta" data-feature="pedidos">Pedir agora</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow eyebrow--light"><svg><use href="#i-bean"/></svg>Cafés especiais · torra própria</p>
+      <h1>Um café passado com <em>calma</em> e prosa boa.</h1>
+      <p class="hero__lead">Grãos selecionados de pequenos produtores, torrados aqui toda semana. Acompanhe com um pão de queijo saindo do forno ou um bolo de vó, no balcão ou em casa.</p>
+      <div class="hero__actions">
+        <a href="#cardapio" class="btn btn--caramel">Ver cardápio <svg><use href="#i-arrow"/></svg></a>
+        <a href="#visite" class="btn btn--outline-light">Como chegar</a>
+      </div>
+      <ul class="hero__perks">
+        <li><svg><use href="#i-fire"/></svg>Torra própria semanal</li>
+        <li><svg><use href="#i-wifi"/></svg>Wi-fi e tomadas</li>
+        <li data-feature="pedidos"><svg><use href="#i-moto"/></svg>Delivery e retirada</li>
+      </ul>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="cup-scene">
+        <span class="cup-scene__glow"></span>
+        <!-- Xícara ilustrada com vapor -->
+        <svg class="cup" viewBox="0 0 320 300">
+          <defs>
+            <linearGradient id="cupBody" x1="0" x2="1"><stop offset="0" stop-color="#e9ddcc"/><stop offset=".45" stop-color="#fffaf2"/><stop offset="1" stop-color="#d9c8b1"/></linearGradient>
+            <radialGradient id="coffee" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#8a5532"/><stop offset=".55" stop-color="#5a321c"/><stop offset="1" stop-color="#3a1f11"/></radialGradient>
+            <radialGradient id="crema" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#e2b07a" stop-opacity=".95"/><stop offset="1" stop-color="#c48a52" stop-opacity="0"/></radialGradient>
+          </defs>
+          <g class="steam" fill="none" stroke="#f6efe6" stroke-width="6" stroke-linecap="round">
+            <path class="steam__a" d="M125 96c-14-18 14-26 0-46s14-26 0-44"/>
+            <path class="steam__b" d="M160 92c-14-18 14-26 0-46s14-26 0-44"/>
+            <path class="steam__c" d="M195 96c-14-18 14-26 0-46s14-26 0-44"/>
+          </g>
+          <ellipse cx="160" cy="262" rx="140" ry="26" fill="#d9c8b1"/>
+          <ellipse cx="160" cy="256" rx="140" ry="26" fill="#fffaf2"/>
+          <ellipse cx="160" cy="256" rx="96" ry="15" fill="#efe4d4"/>
+          <path d="M248 140c40-6 52 50 6 66" fill="none" stroke="#efe2cf" stroke-width="18" stroke-linecap="round"/>
+          <path d="M60 120h200l-10 86c-4 32-38 48-90 48s-86-16-90-48z" fill="url(#cupBody)"/>
+          <ellipse cx="160" cy="120" rx="100" ry="22" fill="#fffaf2"/>
+          <ellipse cx="160" cy="122" rx="88" ry="17" fill="url(#coffee)"/>
+          <ellipse cx="160" cy="122" rx="60" ry="11" fill="url(#crema)"/>
+          <path d="M146 116c6-6 20-6 24 0-4 3-6 7-12 9-6-2-8-6-12-9z" fill="#f2d4a8" opacity=".85"/>
+          <path d="M84 150c2 30 10 60 30 78" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".55"/>
+        </svg>
+      </div>
+      <div class="float float--a">
+        <span class="float__icon"><svg><use href="#i-bean"/></svg></span>
+        <div><strong>Café do dia</strong><small data-cfg="cafeDoDia">Mantiqueira · notas de chocolate</small></div>
+      </div>
+      <div class="float float--b">
+        <span class="float__icon float__icon--green"><svg><use href="#i-clock"/></svg></span>
+        <div><strong>Aberto hoje</strong><small data-cfg="horarioCurto">7h às 20h</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-label="Especialidades">
+    <div class="marquee__track">
+      <span>Espresso</span><svg><use href="#i-bean"/></svg><span>Cappuccino</span><svg><use href="#i-cup"/></svg><span>Coado na V60</span><svg><use href="#i-v60"/></svg><span>Cold brew</span><svg><use href="#i-ice"/></svg><span>Pão de queijo</span><svg><use href="#i-croissant"/></svg><span>Bolos caseiros</span><svg><use href="#i-cake"/></svg>
+      <span aria-hidden="true">Espresso</span><svg><use href="#i-bean"/></svg><span aria-hidden="true">Cappuccino</span><svg><use href="#i-cup"/></svg><span aria-hidden="true">Coado na V60</span><svg><use href="#i-v60"/></svg><span aria-hidden="true">Cold brew</span><svg><use href="#i-ice"/></svg><span aria-hidden="true">Pão de queijo</span><svg><use href="#i-croissant"/></svg><span aria-hidden="true">Bolos caseiros</span><svg><use href="#i-cake"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUERIDINHOS ================= -->
+<section class="section" id="destaquesSec">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow"><svg><use href="#i-cup"/></svg>Os queridinhos</p>
+      <h2>O que todo mundo pede</h2>
+      <p>Os pedidos que mais saem do balcão. Leve para casa ou aproveite aqui.</p>
+    </div>
+    <div class="dishes" id="destaques"></div>
+  </div>
+</section>
+
+<!-- ================= CARDÁPIO (LOUSA) ================= -->
+<section class="section section--board" id="cardapio">
+  <div class="container">
+    <div class="board reveal">
+      <div class="board__head">
+        <p class="board__over">Cardápio do dia</p>
+        <h2 class="board__title">Escolha o seu</h2>
+        <p class="board__note" data-feature="pedidos">Toque em <b>+</b> e envie o pedido pelo WhatsApp</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Categorias do cardápio" id="menuTabs"></div>
+      <p class="menu__intro" id="menuIntro" hidden></p>
+      <div class="menu" id="menu" role="tabpanel"></div>
+      <p class="board__legend"><span class="tag tag--veg">vegano</span><span class="tag tag--house">da casa</span> Leites vegetais disponíveis sem custo extra.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOSSOS GRÃOS ================= -->
+<section class="section" id="graos">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow"><svg><use href="#i-bean"/></svg>Do grão à xícara</p>
+      <h2>Cada etapa feita com cuidado</h2>
+      <p>Compramos direto de pequenos produtores e cuidamos do café até ele chegar à sua mesa.</p>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><span class="steps__icon"><svg><use href="#i-leaf"/></svg></span><b>01</b><h3>Origem</h3><p>Grãos especiais do sul de Minas e da Mantiqueira, com rastreio do sítio.</p></li>
+      <li class="reveal"><span class="steps__icon"><svg><use href="#i-fire"/></svg></span><b>02</b><h3>Torra</h3><p>Torramos em pequenos lotes toda semana, para o café chegar sempre fresco.</p></li>
+      <li class="reveal"><span class="steps__icon"><svg><use href="#i-grinder"/></svg></span><b>03</b><h3>Moagem</h3><p>Moído na hora, na medida certa para cada método de preparo.</p></li>
+      <li class="reveal"><span class="steps__icon"><svg><use href="#i-cup"/></svg></span><b>04</b><h3>Preparo</h3><p>Baristas treinados no espresso, no coado e nas bebidas geladas.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= A CASA ================= -->
+<section class="section section--soft" id="casa">
+  <div class="container split">
+    <div class="split__copy reveal">
+      <p class="eyebrow"><svg><use href="#i-cup"/></svg>A casa</p>
+      <h2>Um cantinho para desacelerar</h2>
+      <p>O Grão &amp; Prosa nasceu para ser aquele lugar onde o café é bem feito e a conversa não tem hora para acabar. Mesas para trabalhar, poltronas para ler e um balcão para quem só passa para o espresso de sempre.</p>
+      <p>Tudo o que sai da cozinha é feito aqui: pão de queijo, bolos, cookies e os salgados do dia.</p>
+      <dl class="stats">
+        <div><dt>8 anos</dt><dd>de balcão</dd></div>
+        <div><dt>6 origens</dt><dd>de café no ano</dd></div>
+        <div><dt>100%</dt><dd>feito na casa</dd></div>
+      </dl>
+    </div>
+    <div class="mosaic reveal" aria-label="Fotos da cafeteria">
+      <figure class="ph ph--tall"><svg><use href="#i-camera"/></svg><figcaption>Balcão</figcaption></figure>
+      <figure class="ph ph--alt"><svg><use href="#i-cup"/></svg><figcaption>Latte art</figcaption></figure>
+      <figure class="ph"><svg><use href="#i-cake"/></svg><figcaption>Vitrine</figcaption></figure>
+      <figure class="ph ph--wide"><svg><use href="#i-wifi"/></svg><figcaption>Salão</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ENCOMENDAS ================= -->
+<section class="section">
+  <div class="container">
+    <div class="order reveal">
+      <span class="order__icon"><svg><use href="#i-gift"/></svg></span>
+      <div>
+        <h2>Bolos e cestas de café da manhã por encomenda</h2>
+        <p>Aniversário, presente ou reunião no escritório: montamos bolos inteiros, cestas e kits de café com 24 horas de antecedência.</p>
+      </div>
+      <a href="#" class="btn btn--caramel" id="encomendaBtn"><svg><use href="#i-whats"/></svg>Fazer encomenda</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISITE ================= -->
+<section class="section section--dark" id="visite">
+  <div class="dark__glow" aria-hidden="true"></div>
+  <div class="container visit">
+    <div class="reveal">
+      <p class="eyebrow eyebrow--light"><svg><use href="#i-pin"/></svg>Visite</p>
+      <h2>Passa aqui para um café</h2>
+      <p class="visit__lead">Estamos no Centro, pertinho da praça. Tem bicicletário, wi-fi liberado e mesas com tomada.</p>
+      <ul class="contact">
+        <li><span><svg><use href="#i-pin"/></svg></span><div><small>Endereço</small><a id="mapsLink" href="#" target="_blank" rel="noopener" data-cfg="endereco">Rua dos Ipês, 214 — Centro</a></div></li>
+        <li><span><svg><use href="#i-whats"/></svg></span><div><small>WhatsApp</small><a data-wa href="#" data-cfg="telefone">(11) 90000-0000</a></div></li>
+        <li><span><svg><use href="#i-insta"/></svg></span><div><small>Instagram</small><strong data-cfg="instagram">@graoeprosa</strong></div></li>
+      </ul>
+    </div>
+    <div class="hours reveal">
+      <h3><svg><use href="#i-clock"/></svg>Horário de funcionamento</h3>
+      <dl>
+        <div><dt>Segunda a sexta</dt><dd>7h às 20h</dd></div>
+        <div><dt>Sábado</dt><dd>8h às 20h</dd></div>
+        <div><dt>Domingo</dt><dd>8h às 14h</dd></div>
+        <div><dt>Feriados</dt><dd>8h às 14h</dd></div>
+      </dl>
+      <p class="hours__note">Delivery e retirada em todo o horário de funcionamento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DÚVIDAS ================= -->
+<section class="section" id="duvidas">
+  <div class="container container--narrow">
+    <div class="section__head reveal">
+      <p class="eyebrow"><svg><use href="#i-bean"/></svg>Dúvidas</p>
+      <h2>Antes do primeiro gole</h2>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>Vocês vendem o café em grãos para levar?<svg><use href="#i-chev"/></svg></summary><p>Sim. Os cafés da semana estão na aba "Grãos" do cardápio, em pacotes de 250 g, inteiros ou moídos para o seu método.</p></details>
+      <details class="reveal"><summary>Tem opções sem lactose e veganas?<svg><use href="#i-chev"/></svg></summary><p>Temos leites de aveia, amêndoa e coco sem custo extra, e opções veganas sinalizadas no cardápio.</p></details>
+      <details class="reveal"><summary>Posso trabalhar no café?<svg><use href="#i-chev"/></svg></summary><p>Claro. O wi-fi é liberado e temos mesas com tomada. Nos horários de pico, pedimos só um pouco de compreensão com o tempo de mesa.</p></details>
+      <details class="reveal"><summary>Qual a área de entrega?<svg><use href="#i-chev"/></svg></summary><p>Entregamos num raio de até 4 km. A taxa é informada na confirmação do pedido pelo WhatsApp.</p></details>
+      <details class="reveal"><summary>Com quanto tempo preciso encomendar um bolo?<svg><use href="#i-chev"/></svg></summary><p>Com 24 horas de antecedência para bolos e cestas. Para pedidos grandes, fale com a gente antes.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="container cta__inner">
+    <div>
+      <h2>Bateu vontade de um café?</h2>
+      <p>Peça agora e receba quentinho, ou passe aqui para uma prosa.</p>
+    </div>
+    <div class="cta__actions">
+      <a data-wa href="#" class="btn btn--whats"><svg><use href="#i-whats"/></svg>Pedir pelo WhatsApp</a>
+      <a href="#cardapio" class="btn btn--outline-light">Ver cardápio</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="#topo" class="brand">
+        <span class="brand__mark"><svg><use href="#logo"/></svg></span>
+        <span class="brand__text"><span data-cfg="nome">Grão &amp; Prosa</span><small data-cfg="slogan">Cafés especiais</small></span>
+      </a>
+      <p>Cafés especiais com torra própria, comidinhas feitas na casa e tempo para conversar.</p>
+    </div>
+    <div class="footer__links">
+      <h4>Navegue</h4>
+      <a href="#cardapio">Cardápio</a><a href="#graos">Nossos grãos</a><a href="#casa">A casa</a><a href="#visite">Visite</a>
+    </div>
+    <div class="footer__links">
+      <h4>Contato</h4>
+      <a data-wa href="#"><svg><use href="#i-whats"/></svg><span data-cfg="telefone">(11) 90000-0000</span></a>
+      <span><svg><use href="#i-pin"/></svg><span data-cfg="endereco">Rua dos Ipês, 214 — Centro</span></span>
+      <span><svg><use href="#i-insta"/></svg><span data-cfg="instagram">@graoeprosa</span></span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© <span id="ano">2026</span> <span data-cfg="nome">Grão &amp; Prosa</span></span>
+    <span>Site de demonstração — dados fictícios</span>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="#" aria-label="Conversar no WhatsApp"><svg><use href="#i-whats"/></svg></a>
+
+<!-- ================= SACOLA ================= -->
+<div class="cartbar" id="cartbar" hidden>
+  <div class="cartbar__inner">
+    <span class="cartbar__info"><span class="cartbar__icon"><svg><use href="#i-bag"/></svg><b id="cartCount">0</b></span><span>Total <b id="cartTotal">R$ 0,00</b></span></span>
+    <button class="btn btn--caramel btn--sm" id="openCart" type="button">Ver pedido <svg><use href="#i-arrow"/></svg></button>
+  </div>
+</div>
+
+<dialog class="drawer" id="cart" aria-labelledby="cartTitle">
+  <form method="dialog" class="drawer__head">
+    <h3 id="cartTitle">Seu pedido</h3>
+    <button class="icon-btn" aria-label="Fechar"><svg><use href="#i-close"/></svg></button>
+  </form>
+  <ul class="cart" id="cartList"></ul>
+  <form class="drawer__form" id="pedidoForm" novalidate>
+    <div class="seg" role="radiogroup" aria-label="Tipo de pedido">
+      <label><input type="radio" name="tipo" value="Entrega" checked><span><svg><use href="#i-moto"/></svg>Entrega</span></label>
+      <label><input type="radio" name="tipo" value="Retirada"><span><svg><use href="#i-bag"/></svg>Retirada</span></label>
+    </div>
+    <label class="field"><span>Nome</span><input name="nome" required autocomplete="name" placeholder="Seu nome"></label>
+    <label class="field" id="enderecoField"><span>Endereço de entrega</span><input name="endereco" autocomplete="street-address" placeholder="Rua, número, bairro e complemento"></label>
+    <div class="row">
+      <label class="field"><span>Pagamento</span>
+        <select name="pagamento"><option>Pix</option><option>Cartão na entrega</option><option>Dinheiro</option></select>
+      </label>
+      <label class="field"><span>Observações</span><input name="obs" placeholder="Ex.: leite de aveia"></label>
+    </div>
+    <div class="drawer__total"><span>Total</span><b id="cartTotal2">R$ 0,00</b></div>
+    <p class="form__error" id="pedidoErro" role="alert" hidden>Informe seu nome e o endereço de entrega.</p>
+    <button class="btn btn--whats btn--block" type="submit"><svg><use href="#i-whats"/></svg>Enviar pedido pelo WhatsApp</button>
+    <p class="form__note">A taxa de entrega é informada pela equipe na confirmação.</p>
+  </form>
+</dialog>
+
+<script src="js/app.js"></script>
+</body>
+</html>

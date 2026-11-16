@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dom Navalha Barbearia — Tradição no corte</title>
+  <meta name="description" content="Barbearia clássica: corte, barba com toalha quente, pigmentação e clube de assinatura. Agende seu horário pelo WhatsApp.">
+  <!-- Site de demonstração: não indexar nos buscadores -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0a0908">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230a0908'/%3E%3Cg fill='%23d8b64a' transform='translate(5 5) scale(.84)'%3E%3Cg transform='rotate(-42 32 32)'%3E%3Cpath d='M28 7.5c2.6-2.2 6.3-2 8.3.4.4.5.6 1.1.6 1.8v16.2l-5.6 3.6-3.3-2.6z' stroke='%230a0908' stroke-width='1.2' paint-order='stroke'/%3E%3Cpath d='M30.2 31.6c-1 7-1.3 14.7-.6 22.6.2 2.3 4.6 2.3 4.8 0 .7-7.9.4-15.6-.6-22.6z' stroke='%230a0908' stroke-width='1.2' paint-order='stroke'/%3E%3Ccircle cx='31.4' cy='29.6' r='2.3' stroke='%230a0908' stroke-width='1.2' paint-order='stroke'/%3E%3Ccircle cx='31.4' cy='29.6' r='.9' fill='%230a0908'/%3E%3Ccircle cx='32' cy='50.5' r='.9' fill='%230a0908'/%3E%3C/g%3E%3Cg transform='rotate(42 32 32)'%3E%3Cpath d='M28 7.5c2.6-2.2 6.3-2 8.3.4.4.5.6 1.1.6 1.8v16.2l-5.6 3.6-3.3-2.6z' stroke='%230a0908' stroke-width='1.2' paint-order='stroke'/%3E%3Cpath d='M30.2 31.6c-1 7-1.3 14.7-.6 22.6.2 2.3 4.6 2.3 4.8 0 .7-7.9.4-15.6-.6-22.6z' stroke='%230a0908' stroke-width='1.2' paint-order='stroke'/%3E%3Ccircle cx='31.4' cy='29.6' r='2.3' stroke='%230a0908' stroke-width='1.2' paint-order='stroke'/%3E%3Ccircle cx='31.4' cy='29.6' r='.9' fill='%230a0908'/%3E%3Ccircle cx='32' cy='50.5' r='.9' fill='%230a0908'/%3E%3C/g%3E%3Cpath transform='translate(12.8 15.5) scale(1.6)' stroke='%230a0908' stroke-width='1.1' paint-order='stroke' d='M12 11.5c-1.4-2-3.6-3.2-5.6-2.4-1.7.7-2.4 2.7-4.9 1.9.6 2.9 3.2 4.7 6.1 4.2 2-.3 3.4-1.6 4.4-3 1 1.4 2.4 2.7 4.4 3 2.9.5 5.5-1.3 6.1-4.2-2.5.8-3.2-1.2-4.9-1.9-2-.8-4.2.4-5.6 2.4z'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Ícones (artefatos de barbearia) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></g></symbol>
+    <symbol id="i-razor" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 13l8-8a2.1 2.1 0 013 3l-8 8"/><path d="M9 13l-5 5a1.4 1.4 0 002 2l5-5"/><path d="M9 13l3 3"/><circle cx="10.5" cy="14.5" r=".6" fill="currentColor"/></g></symbol>
+    <symbol id="i-comb" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="4" rx="1"/><path d="M5.5 11v6M8.5 11v6M11.5 11v6M14.5 11v6M17.5 11v4M20 11v4"/></g></symbol>
+    <symbol id="i-brush" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13.5c-1.2-3.2-.2-7.6 4-10.5 4.2 2.9 5.2 7.3 4 10.5z"/><path d="M8.5 13.5h7l-1 7.5h-5z"/><path d="M9.2 17h5.6"/></g></symbol>
+    <symbol id="i-mustache" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.5c-1.4-2-3.6-3.2-5.6-2.4-1.7.7-2.4 2.7-4.9 1.9.6 2.9 3.2 4.7 6.1 4.2 2-.3 3.4-1.6 4.4-3 1 1.4 2.4 2.7 4.4 3 2.9.5 5.5-1.3 6.1-4.2-2.5.8-3.2-1.2-4.9-1.9-2-.8-4.2.4-5.6 2.4z"/></symbol>
+    <symbol id="i-towel" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16v10H4z"/><path d="M4 13h16"/><path d="M9 6c0-1 1-2 1-3M13 6c0-1 1-2 1-3M17 6c0-1 1-2 1-3"/></g></symbol>
+    <symbol id="i-chair" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7a2 2 0 012 2v6H7z"/><path d="M5 11h14v3H5z"/><path d="M12 14v4M7 21h10M9 18h6"/></g></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5L3 8z"/></symbol>
+    <symbol id="i-beer" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h11v12a1 1 0 01-1 1H6a1 1 0 01-1-1z"/><path d="M16 11h2a2 2 0 012 2v2a2 2 0 01-2 2h-2"/><path d="M5 8a3 3 0 013-3 3 3 0 015 0 2.5 2.5 0 013 3"/><path d="M9 12v5M12 12v5"/></g></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6h18v12H3zM3 10h18M7 15h4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v16H4zM4 10h16M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11zM12 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3 2"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zM12 16a4 4 0 100-8 4 4 0 000 8zM17.5 6.5h.01"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9L12 2.8z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4 7h3l2-3h6l2 3h3v13H4zM12 17a4 4 0 100-8 4 4 0 000 8z"/></symbol>
+    <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol>
+    <symbol id="logo" viewBox="0 0 64 64">
+      <g fill="currentColor"><g transform="rotate(-42 32 32)"><path d="M28 7.5c2.6-2.2 6.3-2 8.3.4.4.5.6 1.1.6 1.8v16.2l-5.6 3.6-3.3-2.6z" stroke="#0a0908" stroke-width="1.2" paint-order="stroke"/><path d="M35.2 9.5v15.8" stroke="#f6ebcc" stroke-width="1" stroke-linecap="round" opacity=".7"/><path d="M30.2 31.6c-1 7-1.3 14.7-.6 22.6.2 2.3 4.6 2.3 4.8 0 .7-7.9.4-15.6-.6-22.6z" stroke="#0a0908" stroke-width="1.2" paint-order="stroke"/><circle cx="31.4" cy="29.6" r="2.3" stroke="#0a0908" stroke-width="1.2" paint-order="stroke"/><circle cx="31.4" cy="29.6" r=".9" fill="#0a0908"/><circle cx="32" cy="50.5" r=".9" fill="#0a0908"/></g><g transform="rotate(42 32 32)"><path d="M28 7.5c2.6-2.2 6.3-2 8.3.4.4.5.6 1.1.6 1.8v16.2l-5.6 3.6-3.3-2.6z" stroke="#0a0908" stroke-width="1.2" paint-order="stroke"/><path d="M35.2 9.5v15.8" stroke="#f6ebcc" stroke-width="1" stroke-linecap="round" opacity=".7"/><path d="M30.2 31.6c-1 7-1.3 14.7-.6 22.6.2 2.3 4.6 2.3 4.8 0 .7-7.9.4-15.6-.6-22.6z" stroke="#0a0908" stroke-width="1.2" paint-order="stroke"/><circle cx="31.4" cy="29.6" r="2.3" stroke="#0a0908" stroke-width="1.2" paint-order="stroke"/><circle cx="31.4" cy="29.6" r=".9" fill="#0a0908"/><circle cx="32" cy="50.5" r=".9" fill="#0a0908"/></g><path transform="translate(12.8 15.5) scale(1.6)" stroke="#0a0908" stroke-width="1.1" paint-order="stroke" d="M12 11.5c-1.4-2-3.6-3.2-5.6-2.4-1.7.7-2.4 2.7-4.9 1.9.6 2.9 3.2 4.7 6.1 4.2 2-.3 3.4-1.6 4.4-3 1 1.4 2.4 2.7 4.4 3 2.9.5 5.5-1.3 6.1-4.2-2.5.8-3.2-1.2-4.9-1.9-2-.8-4.2.4-5.6 2.4z"/></g>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="topo">
+  <div class="container header__inner">
+    <a href="#topo" class="brand" aria-label="Dom Navalha Barbearia — início">
+      <span class="brand__mark"><svg><use href="#logo"/></svg></span>
+      <span class="brand__text"><small>Barbearia</small><span>Dom <em>Navalha</em></span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#clube">Clube</a>
+      <a href="#barbeiros">Barbeiros</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#agendar" class="btn btn--sm btn--gold-outline nav__cta">Agendar horário</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow"><svg><use href="#i-mustache"/></svg>Barbearia clássica desde 2014</p>
+      <h1>Tradição no corte.<br><span class="script">Estilo</span> no detalhe.</h1>
+      <p class="hero__lead">Corte na tesoura ou na máquina, barba feita na navalha com toalha quente e aquele café passado na hora. Um lugar para você sair renovado, sem pressa.</p>
+      <div class="hero__actions">
+        <a href="#agendar" class="btn btn--gold">Agendar horário <svg><use href="#i-arrow"/></svg></a>
+        <a href="#servicos" class="btn btn--outline-light">Ver serviços e preços</a>
+      </div>
+      <ul class="hero__perks">
+        <li><svg><use href="#i-calendar"/></svg>Agendamento pelo WhatsApp</li>
+        <li><svg><use href="#i-beer"/></svg>Cerveja e café por conta da casa</li>
+        <li><svg><use href="#i-card"/></svg>Pix e cartão</li>
+      </ul>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <!-- Poste de barbeiro animado -->
+      <div class="pole">
+        <span class="pole__cap"></span>
+        <span class="pole__glass"><span class="pole__stripes"></span></span>
+        <span class="pole__cap pole__cap--bottom"></span>
+      </div>
+
+      <!-- Emblema vintage -->
+      <div class="emblem">
+        <svg class="emblem__text" viewBox="0 0 300 300">
+          <defs><path id="circle" d="M150,150 m-118,0 a118,118 0 1,1 236,0 a118,118 0 1,1 -236,0"/></defs>
+          <text><textPath href="#circle" startOffset="0" textLength="735" lengthAdjust="spacing">DOM NAVALHA ✦ BARBEARIA CLÁSSICA ✦ CORTE &amp; BARBA ✦</textPath></text>
+        </svg>
+        <div class="emblem__core">
+          <div class="emblem__tools">
+            <svg class="t-logo"><use href="#logo"/></svg>
+          </div>
+          <span class="emblem__name">DOM NAVALHA</span>
+          <span class="emblem__est">EST. 2014</span>
+        </div>
+      </div>
+
+      <div class="float float--a">
+        <span class="float__icon"><svg><use href="#i-beer"/></svg></span>
+        <div><strong>Café &amp; cerveja</strong><small>Por conta da casa</small></div>
+      </div>
+      <div class="float float--b">
+        <span class="float__icon"><svg><use href="#i-razor"/></svg></span>
+        <div><strong>Corte + barba</strong><small>de R$ 80 por R$ 70</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-label="Serviços">
+    <div class="marquee__track">
+      <span>Corte</span><svg><use href="#i-scissors"/></svg><span>Barba na navalha</span><svg><use href="#i-razor"/></svg><span>Pigmentação</span><svg><use href="#i-comb"/></svg><span>Sobrancelha</span><svg><use href="#i-mustache"/></svg><span>Barboterapia</span><svg><use href="#i-brush"/></svg><span>Corte infantil</span><svg><use href="#i-scissors"/></svg>
+      <span aria-hidden="true">Corte</span><svg><use href="#i-scissors"/></svg><span aria-hidden="true">Barba na navalha</span><svg><use href="#i-razor"/></svg><span aria-hidden="true">Pigmentação</span><svg><use href="#i-comb"/></svg><span aria-hidden="true">Sobrancelha</span><svg><use href="#i-mustache"/></svg><span aria-hidden="true">Barboterapia</span><svg><use href="#i-brush"/></svg><span aria-hidden="true">Corte infantil</span><svg><use href="#i-scissors"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVIÇOS / PREÇOS ================= -->
+<section class="section section--paper" id="servicos">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--dark"><svg><use href="#i-scissors"/></svg>Serviços</p>
+      <h2>Tabela da casa</h2>
+      <p>Preços justos, trabalho caprichado. Todos os serviços incluem lavagem e finalização.</p>
+    </div>
+
+    <div class="board reveal">
+      <span class="board__corner board__corner--tl"></span><span class="board__corner board__corner--tr"></span>
+      <span class="board__corner board__corner--bl"></span><span class="board__corner board__corner--br"></span>
+
+      <div class="board__col">
+        <h3 class="board__title"><svg><use href="#i-scissors"/></svg>Cabelo</h3>
+        <ul class="menu">
+          <li><div><strong>Corte clássico</strong><small>Tesoura e máquina, com lavagem</small></div><i></i><b>R$ 45</b></li>
+          <li><div><strong>Degradê / navalhado</strong><small>Fade no capricho, acabamento na navalha</small></div><i></i><b>R$ 50</b></li>
+          <li><div><strong>Corte infantil</strong><small>Até 12 anos</small></div><i></i><b>R$ 35</b></li>
+          <li><div><strong>Pigmentação</strong><small>Disfarça falhas e realça o corte</small></div><i></i><b>R$ 30</b></li>
+          <li><div><strong>Relaxamento / platinado</strong><small>Sob avaliação</small></div><i></i><b>a partir de R$ 80</b></li>
+        </ul>
+      </div>
+
+      <div class="board__col">
+        <h3 class="board__title"><svg><use href="#i-razor"/></svg>Barba &amp; cia.</h3>
+        <ul class="menu">
+          <li><div><strong>Barba na navalha</strong><small>Toalha quente e pós-barba</small></div><i></i><b>R$ 35</b></li>
+          <li><div><strong>Barboterapia</strong><small>Esfoliação, vapor, óleo e massagem</small></div><i></i><b>R$ 55</b></li>
+          <li><div><strong>Sobrancelha</strong><small>Na navalha ou na pinça</small></div><i></i><b>R$ 15</b></li>
+          <li><div><strong>Pezinho / acabamento</strong><small>Entre um corte e outro</small></div><i></i><b>R$ 15</b></li>
+          <li class="menu__combo"><div><strong>Combo corte + barba</strong><small>O mais pedido da casa</small></div><i></i><b><s>R$ 80</s> R$ 70</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIÊNCIA ================= -->
+<section class="section" id="experiencia">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow"><svg><use href="#i-brush"/></svg>A experiência</p>
+      <h2>Mais que um corte, um <span class="script">ritual</span></h2>
+    </div>
+    <div class="tools">
+      <article class="tool reveal">
+        <span class="tool__icon"><svg><use href="#i-razor"/></svg></span>
+        <h3>Navalha afiada</h3>
+        <p>Lâmina descartável para cada cliente e acabamento preciso no contorno.</p>
+      </article>
+      <article class="tool reveal">
+        <span class="tool__icon"><svg><use href="#i-towel"/></svg></span>
+        <h3>Toalha quente</h3>
+        <p>Abre os poros, amacia os fios e deixa a barba pronta para a navalha.</p>
+      </article>
+      <article class="tool reveal">
+        <span class="tool__icon"><svg><use href="#i-brush"/></svg></span>
+        <h3>Espuma no pincel</h3>
+        <p>Do jeito tradicional, com produtos que hidratam e protegem a pele.</p>
+      </article>
+      <article class="tool reveal">
+        <span class="tool__icon"><svg><use href="#i-chair"/></svg></span>
+        <h3>Cadeira clássica</h3>
+        <p>Cadeiras de barbeiro reclináveis para você relaxar de verdade.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CLUBE ================= -->
+<section class="section section--deep" id="clube">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow"><svg><use href="#i-crown"/></svg>Clube Dom Navalha</p>
+      <h2>Assine e ande sempre na régua</h2>
+      <p>Cortes ilimitados no mês, sem se preocupar com valor a cada visita.</p>
+    </div>
+    <div class="plans">
+      <article class="plan reveal">
+        <h3>Clube Corte</h3>
+        <p class="plan__price"><small>R$</small>99<span>/mês</span></p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Cortes ilimitados</li>
+          <li><svg><use href="#i-check"/></svg>Sobrancelha inclusa</li>
+          <li><svg><use href="#i-check"/></svg>Prioridade no agendamento</li>
+        </ul>
+        <a href="#agendar" data-servico="Clube Corte" class="btn btn--outline-light btn--block">Quero assinar</a>
+      </article>
+      <article class="plan plan--featured reveal">
+        <span class="plan__tag">Mais escolhido</span>
+        <h3>Clube Dom</h3>
+        <p class="plan__price"><small>R$</small>159<span>/mês</span></p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Cortes e barbas ilimitados</li>
+          <li><svg><use href="#i-check"/></svg>Sobrancelha e pezinho inclusos</li>
+          <li><svg><use href="#i-check"/></svg>1 barboterapia por mês</li>
+          <li><svg><use href="#i-check"/></svg>10% off em produtos</li>
+        </ul>
+        <a href="#agendar" data-servico="Clube Dom" class="btn btn--gold btn--block">Quero assinar</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BARBEIROS ================= -->
+<section class="section" id="barbeiros">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow"><svg><use href="#i-comb"/></svg>Barbeiros</p>
+      <h2>Mãos que entendem do ofício</h2>
+    </div>
+    <div class="team">
+      <article class="member reveal">
+        <span class="avatar">TR</span>
+        <h3>Thiago “Dom” Reis</h3>
+        <p>Fundador · Degradê e navalhado</p>
+        <small>12 anos de cadeira</small>
+      </article>
+      <article class="member reveal">
+        <span class="avatar">BS</span>
+        <h3>Bruno Sales</h3>
+        <p>Barba e barboterapia</p>
+        <small>8 anos de cadeira</small>
+      </article>
+      <article class="member reveal">
+        <span class="avatar">VM</span>
+        <h3>Vitor Matos</h3>
+        <p>Cortes clássicos e infantil</p>
+        <small>6 anos de cadeira</small>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERIA ================= -->
+<section class="section section--deep" id="galeria">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow"><svg><use href="#i-camera"/></svg>Galeria</p>
+      <h2>Trabalhos da casa</h2>
+      <p>Siga <strong>@domnavalha</strong> para ver os cortes da semana.</p>
+    </div>
+    <div class="gallery reveal">
+      <figure class="ph ph--tall"><svg><use href="#i-scissors"/></svg><figcaption>Degradê</figcaption></figure>
+      <figure class="ph"><svg><use href="#i-razor"/></svg><figcaption>Barba</figcaption></figure>
+      <figure class="ph"><svg><use href="#i-comb"/></svg><figcaption>Clássico</figcaption></figure>
+      <figure class="ph ph--wide"><svg><use href="#i-chair"/></svg><figcaption>Nosso espaço</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= AGENDAR ================= -->
+<section class="section" id="agendar">
+  <div class="container split">
+    <div class="split__copy reveal">
+      <p class="eyebrow"><svg><use href="#i-calendar"/></svg>Agendamento</p>
+      <h2>Garanta seu horário na cadeira</h2>
+      <p>Escolha o serviço, o barbeiro e o melhor horário. A gente confirma pelo WhatsApp em poucos minutos.</p>
+      <ul class="contact">
+        <li><span><svg><use href="#i-whats"/></svg></span><div><small>WhatsApp</small><a data-wa href="#">(11) 90000-0000</a></div></li>
+        <li><span><svg><use href="#i-pin"/></svg></span><div><small>Endereço</small><strong>Av. dos Barbeiros, 250 — Centro</strong></div></li>
+        <li><span><svg><use href="#i-clock"/></svg></span><div><small>Horários</small><strong>Ter a sex 9h–20h · Sáb 8h–18h</strong></div></li>
+        <li><span><svg><use href="#i-insta"/></svg></span><div><small>Instagram</small><strong>@domnavalha</strong></div></li>
+      </ul>
+    </div>
+
+    <form class="form reveal" id="form" novalidate>
+      <h3>Agendar horário</h3>
+      <fieldset class="chips">
+        <legend>Serviço</legend>
+        <label><input type="radio" name="servico" value="Corte" checked><span>Corte</span></label>
+        <label><input type="radio" name="servico" value="Barba"><span>Barba</span></label>
+        <label><input type="radio" name="servico" value="Combo corte + barba"><span>Corte + barba</span></label>
+        <label><input type="radio" name="servico" value="Barboterapia"><span>Barboterapia</span></label>
+        <label><input type="radio" name="servico" value="Corte infantil"><span>Infantil</span></label>
+        <label><input type="radio" name="servico" value="Clube Corte"><span>Clube Corte</span></label>
+        <label><input type="radio" name="servico" value="Clube Dom"><span>Clube Dom</span></label>
+      </fieldset>
+      <div class="row">
+        <label class="field"><span>Seu nome</span><input name="nome" required autocomplete="name" placeholder="Como podemos te chamar?"></label>
+        <label class="field"><span>WhatsApp</span><input name="fone" required inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000"></label>
+      </div>
+      <div class="row row--3">
+        <label class="field"><span>Barbeiro</span>
+          <select name="barbeiro"><option>Sem preferência</option><option>Thiago “Dom”</option><option>Bruno</option><option>Vitor</option></select>
+        </label>
+        <label class="field"><span>Dia</span><input type="date" name="dia"></label>
+        <label class="field"><span>Horário</span>
+          <select name="horario"><option>Manhã</option><option>Almoço</option><option>Tarde</option><option>Noite</option></select>
+        </label>
+      </div>
+      <p class="form__error" id="formError" role="alert" hidden>Preencha seu nome e um WhatsApp válido.</p>
+      <button class="btn btn--gold btn--block" type="submit"><svg><use href="#i-whats"/></svg>Agendar pelo WhatsApp</button>
+      <p class="form__note">Ao enviar, abrimos o WhatsApp com a mensagem pronta. Nada é enviado sem a sua confirmação.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= DÚVIDAS ================= -->
+<section class="section section--deep" id="duvidas">
+  <div class="container container--narrow">
+    <div class="section__head reveal">
+      <p class="eyebrow"><svg><use href="#i-mustache"/></svg>Dúvidas</p>
+      <h2>Antes de sentar na cadeira</h2>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>Precisa agendar ou atendem por ordem de chegada?<svg><use href="#i-chev"/></svg></summary><p>Atendemos os dois, mas quem agenda tem prioridade. Pelo WhatsApp você garante o horário e não pega fila.</p></details>
+      <details class="reveal"><summary>Como funciona o Clube?<svg><use href="#i-chev"/></svg></summary><p>Você paga uma mensalidade e usa os serviços do plano quantas vezes quiser no mês, com agendamento prioritário. Sem fidelidade: cancela quando quiser.</p></details>
+      <details class="reveal"><summary>Quais formas de pagamento vocês aceitam?<svg><use href="#i-chev"/></svg></summary><p>Pix, débito, crédito e dinheiro. O Clube é cobrado no cartão de crédito, todo mês.</p></details>
+      <details class="reveal"><summary>Tem estacionamento?<svg><use href="#i-chev"/></svg></summary><p>Tem vaga na rua em frente e um estacionamento parceiro a 50 metros, com desconto para clientes.</p></details>
+      <details class="reveal"><summary>E se eu precisar remarcar?<svg><use href="#i-chev"/></svg></summary><p>Sem problema. Só avise pelo WhatsApp com pelo menos 2 horas de antecedência para liberarmos o horário.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="cta__pole" aria-hidden="true"></div>
+  <div class="container cta__inner">
+    <div>
+      <h2>Bora dar um trato no visual?</h2>
+      <p>Chama a Dom Navalha e garanta seu horário ainda hoje.</p>
+    </div>
+    <div class="cta__actions">
+      <a data-wa href="#" class="btn btn--whats"><svg><use href="#i-whats"/></svg>Chamar no WhatsApp</a>
+      <a href="#agendar" class="btn btn--outline-light">Agendar horário</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="#topo" class="brand">
+        <span class="brand__mark"><svg><use href="#logo"/></svg></span>
+        <span class="brand__text"><small>Barbearia</small><span>Dom <em>Navalha</em></span></span>
+      </a>
+      <p>Barbearia clássica com corte de respeito, barba na navalha e aquele atendimento de amigo.</p>
+    </div>
+    <div class="footer__links">
+      <h4>Navegue</h4>
+      <a href="#servicos">Serviços</a><a href="#clube">Clube</a><a href="#barbeiros">Barbeiros</a><a href="#galeria">Galeria</a>
+    </div>
+    <div class="footer__links">
+      <h4>Contato</h4>
+      <a data-wa href="#"><svg><use href="#i-whats"/></svg>(11) 90000-0000</a>
+      <span><svg><use href="#i-pin"/></svg>Av. dos Barbeiros, 250 — Centro</span>
+      <span><svg><use href="#i-insta"/></svg>@domnavalha</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© <span id="ano">2026</span> Dom Navalha Barbearia</span>
+    <span>Site de demonstração — dados fictícios</span>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="#" aria-label="Conversar no WhatsApp"><svg><use href="#i-whats"/></svg></a>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aurora Odontologia — Seu sorriso em boas mãos</title>
+  <meta name="description" content="Clínica odontológica completa: clínico geral, ortodontia, implantes, clareamento e odontopediatria. Agende sua avaliação pelo WhatsApp.">
+  <!-- Site de demonstração: não indexar nos buscadores -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#04211f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2304211f'/%3E%3Cpath fill='%2335d0b8' d='M22 16c-6 0-10 5-10 11 0 7 3 10 4 17 1 5 2 8 5 8 4 0 4-9 11-9s7 9 11 9c3 0 4-3 5-8 1-7 4-10 4-17 0-6-4-11-10-11-4 0-6 2-10 2s-6-2-10-2z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- SVG sprite de ícones -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-tooth" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7.5 3C5 3 3.5 5 3.5 7.5c0 3 1.3 4.2 1.8 7.2.4 2.5.9 6.3 2.6 6.3 2 0 1.6-5 4.1-5s2.1 5 4.1 5c1.7 0 2.2-3.8 2.6-6.3.5-3 1.8-4.2 1.8-7.2C20.5 5 19 3 16.5 3 14.6 3 13.6 4 12 4s-2.6-1-4.5-1z"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3zM19 16l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7.7-2z"/></symbol>
+    <symbol id="i-align" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M6 8v8M10 8v8M14 8v8M18 8v8"/></symbol>
+    <symbol id="i-implant" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 3h10l-1 4H8L7 3zM9 7v2h6V7M9.5 11h5M10 14h4M10.5 17h3M11 20h2"/></symbol>
+    <symbol id="i-child" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 8a3 3 0 100-6 3 3 0 000 6zM7 22v-6l-2-1 2-5h10l2 5-2 1v6M10 22v-4M14 22v-4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6h18v12H3zM3 10h18M7 15h4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3 2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/></symbol>
+    <symbol id="i-root" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M6 3h12c0 4-1 6-2 7l-1 11-3-6-3 6-1-11c-1-1-2-3-2-7z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11zM12 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zM12 16a4 4 0 100-8 4 4 0 000 8zM17.5 6.5h.01"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9L12 2.8z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4 7h3l2-3h6l2 3h3v13H4zM12 17a4 4 0 100-8 4 4 0 000 8z"/></symbol>
+    <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="topo">
+  <div class="container header__inner">
+    <a href="#topo" class="brand" aria-label="Aurora Odontologia — início">
+      <span class="brand__mark"><svg><use href="#i-tooth"/></svg></span>
+      <span class="brand__text"><small>Clínica</small><span>Aurora <em>Odonto</em></span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#clinica">A clínica</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#agendar" class="btn btn--sm btn--ghost nav__cta">Agendar avaliação</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow eyebrow--light"><span class="dot"></span>Odontologia completa no Centro</p>
+      <h1>Seu sorriso em <span class="grad">boas mãos</span>, do check-up ao implante.</h1>
+      <p class="hero__lead">Atendimento sem pressa, tecnologia de ponta e uma equipe que explica cada etapa do seu tratamento. Para toda a família, do primeiro dentinho ao sorriso novo.</p>
+      <div class="hero__actions">
+        <a href="#agendar" class="btn btn--primary">Agendar avaliação <svg><use href="#i-arrow"/></svg></a>
+        <a href="#tratamentos" class="btn btn--outline-light">Ver tratamentos</a>
+      </div>
+      <ul class="hero__perks">
+        <li><svg><use href="#i-clock"/></svg>Urgência no mesmo dia</li>
+        <li><svg><use href="#i-card"/></svg>Parcelamento em até 12x</li>
+        <li><svg><use href="#i-shield"/></svg>Biossegurança certificada</li>
+      </ul>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="orb">
+        <div class="orb__ring"></div>
+        <div class="orb__core">
+          <svg class="orb__icon"><use href="#i-tooth"/></svg>
+          <span class="orb__name">AURORA</span>
+          <span class="orb__sub">ODONTOLOGIA</span>
+        </div>
+      </div>
+      <div class="float float--a">
+        <span class="float__icon"><svg><use href="#i-shield"/></svg></span>
+        <div><strong>Escaneamento digital</strong><small>Sem moldagem com massa</small></div>
+      </div>
+      <div class="float float--b">
+        <span class="float__icon float__icon--green"><svg><use href="#i-sparkle"/></svg></span>
+        <div><strong>Avaliação inicial</strong><small>Sem compromisso</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-label="Especialidades">
+    <div class="marquee__track">
+      <span>Clínico geral</span><i>+</i><span>Ortodontia</span><i>+</i><span>Implantes</span><i>+</i><span>Clareamento</span><i>+</i><span>Lentes de contato dental</span><i>+</i><span>Odontopediatria</span><i>+</i><span>Canal</span><i>+</i><span>Periodontia</span><i>+</i>
+      <span aria-hidden="true">Clínico geral</span><i>+</i><span aria-hidden="true">Ortodontia</span><i>+</i><span aria-hidden="true">Implantes</span><i>+</i><span aria-hidden="true">Clareamento</span><i>+</i><span aria-hidden="true">Lentes de contato dental</span><i>+</i><span aria-hidden="true">Odontopediatria</span><i>+</i><span aria-hidden="true">Canal</span><i>+</i><span aria-hidden="true">Periodontia</span><i>+</i>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRATAMENTOS ================= -->
+<section class="section" id="tratamentos">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Tratamentos</p>
+      <h2>Tudo o que o seu sorriso precisa, em um só lugar</h2>
+      <p>Especialistas de cada área trabalhando juntos, para você não precisar ir de clínica em clínica.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card reveal">
+        <span class="card__icon"><svg><use href="#i-tooth"/></svg></span>
+        <h3>Clínico geral e prevenção</h3>
+        <p>Limpeza, restaurações e check-up completo para manter seus dentes saudáveis por muito mais tempo.</p>
+        <a href="#agendar" data-tratamento="Clínico geral" class="card__link">Agendar <svg><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card reveal">
+        <span class="card__icon"><svg><use href="#i-align"/></svg></span>
+        <h3>Ortodontia e alinhadores</h3>
+        <p>Aparelho fixo, estético ou alinhadores transparentes, com planejamento digital do seu sorriso.</p>
+        <a href="#agendar" data-tratamento="Ortodontia" class="card__link">Agendar <svg><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card reveal">
+        <span class="card__icon"><svg><use href="#i-implant"/></svg></span>
+        <h3>Implantes dentários</h3>
+        <p>Recupere a mastigação e a confiança para sorrir, com implantes de marcas reconhecidas e garantia.</p>
+        <a href="#agendar" data-tratamento="Implantes" class="card__link">Agendar <svg><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card reveal">
+        <span class="card__icon"><svg><use href="#i-sparkle"/></svg></span>
+        <h3>Clareamento e estética</h3>
+        <p>Clareamento a laser ou caseiro, lentes de contato dental e facetas para um sorriso mais bonito e natural.</p>
+        <a href="#agendar" data-tratamento="Clareamento e estética" class="card__link">Agendar <svg><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card reveal">
+        <span class="card__icon"><svg><use href="#i-child"/></svg></span>
+        <h3>Odontopediatria</h3>
+        <p>Consultório lúdico e profissionais pacientes, para as crianças criarem uma relação tranquila com o dentista.</p>
+        <a href="#agendar" data-tratamento="Odontopediatria" class="card__link">Agendar <svg><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="card reveal">
+        <span class="card__icon"><svg><use href="#i-root"/></svg></span>
+        <h3>Canal e urgências</h3>
+        <p>Dor de dente não espera. Atendimento de urgência no mesmo dia e tratamento de canal com microscópio.</p>
+        <a href="#agendar" data-tratamento="Urgência" class="card__link">Agendar <svg><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= A CLÍNICA ================= -->
+<section class="section section--soft" id="clinica">
+  <div class="container split">
+    <div class="split__copy reveal">
+      <p class="eyebrow">A clínica</p>
+      <h2>Um espaço pensado para você se sentir à vontade</h2>
+      <p>Há mais de 12 anos cuidando de sorrisos no Centro. Nossa clínica foi planejada para que cada consulta seja tranquila: ambiente acolhedor, horários pontuais e uma equipe que escuta antes de tratar.</p>
+      <p>Usamos escaneamento digital, raio-x de baixa radiação e materiais de primeira linha, sempre explicando as opções e os valores antes de começar.</p>
+      <dl class="stats">
+        <div><dt>12+</dt><dd>anos de clínica</dd></div>
+        <div><dt>8 mil</dt><dd>pacientes atendidos</dd></div>
+        <div><dt>6</dt><dd>especialistas</dd></div>
+      </dl>
+    </div>
+    <div class="mosaic reveal" aria-label="Fotos da clínica">
+      <figure class="ph ph--tall"><svg><use href="#i-camera"/></svg><figcaption>Recepção</figcaption></figure>
+      <figure class="ph"><svg><use href="#i-camera"/></svg><figcaption>Consultório</figcaption></figure>
+      <figure class="ph ph--alt"><svg><use href="#i-camera"/></svg><figcaption>Equipe</figcaption></figure>
+      <figure class="ph ph--wide"><svg><use href="#i-camera"/></svg><figcaption>Espaço kids</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="section">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Como funciona</p>
+      <h2>Da primeira mensagem ao sorriso novo</h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><span>01</span><h3>Você chama no WhatsApp</h3><p>Escolhe o melhor dia e horário, sem fila de espera no telefone.</p></li>
+      <li class="reveal"><span>02</span><h3>Avaliação completa</h3><p>Examinamos com calma, fazemos as imagens necessárias e tiramos suas dúvidas.</p></li>
+      <li class="reveal"><span>03</span><h3>Plano claro</h3><p>Você recebe o plano de tratamento por escrito, com prazos e formas de pagamento.</p></li>
+      <li class="reveal"><span>04</span><h3>Acompanhamento</h3><p>Lembretes de retorno e suporte pelo WhatsApp durante todo o tratamento.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= EQUIPE ================= -->
+<section class="section section--soft" id="equipe">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Equipe</p>
+      <h2>Especialistas que cuidam de você</h2>
+    </div>
+    <div class="team">
+      <article class="member reveal">
+        <span class="avatar">HC</span>
+        <div><h3>Dra. Helena Campos</h3><p>Diretora clínica · Implantodontia</p><small>CRO-SP 00.000</small></div>
+      </article>
+      <article class="member reveal">
+        <span class="avatar avatar--b">RM</span>
+        <div><h3>Dr. Rafael Moreira</h3><p>Ortodontia e alinhadores</p><small>CRO-SP 00.000</small></div>
+      </article>
+      <article class="member reveal">
+        <span class="avatar avatar--c">LA</span>
+        <div><h3>Dra. Lívia Andrade</h3><p>Odontopediatria</p><small>CRO-SP 00.000</small></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= AGENDAR ================= -->
+<section class="section" id="agendar">
+  <div class="container split split--form">
+    <div class="split__copy reveal">
+      <p class="eyebrow">Agende sua avaliação</p>
+      <h2>Escolha o melhor horário para você</h2>
+      <p>Preencha os dados e nossa recepção confirma o horário pelo WhatsApp, normalmente em poucos minutos.</p>
+      <ul class="contact">
+        <li><span><svg><use href="#i-whats"/></svg></span><div><small>WhatsApp</small><a data-wa href="#">(11) 90000-0000</a></div></li>
+        <li><span><svg><use href="#i-pin"/></svg></span><div><small>Endereço</small><strong>Rua das Acácias, 120 — Centro</strong></div></li>
+        <li><span><svg><use href="#i-clock"/></svg></span><div><small>Horários</small><strong>Seg a sex 8h–20h · Sáb 8h–13h</strong></div></li>
+        <li><span><svg><use href="#i-insta"/></svg></span><div><small>Instagram</small><strong>@auroraodonto</strong></div></li>
+      </ul>
+    </div>
+
+    <form class="form reveal" id="form" novalidate>
+      <h3>Solicitar agendamento</h3>
+      <fieldset class="chips">
+        <legend>Tratamento de interesse</legend>
+        <label><input type="radio" name="tratamento" value="Avaliação geral" checked><span>Avaliação</span></label>
+        <label><input type="radio" name="tratamento" value="Clínico geral"><span>Limpeza</span></label>
+        <label><input type="radio" name="tratamento" value="Ortodontia"><span>Ortodontia</span></label>
+        <label><input type="radio" name="tratamento" value="Implantes"><span>Implantes</span></label>
+        <label><input type="radio" name="tratamento" value="Clareamento e estética"><span>Estética</span></label>
+        <label><input type="radio" name="tratamento" value="Odontopediatria"><span>Infantil</span></label>
+        <label><input type="radio" name="tratamento" value="Urgência"><span>Urgência</span></label>
+      </fieldset>
+      <div class="row">
+        <label class="field"><span>Seu nome</span><input name="nome" required autocomplete="name" placeholder="Nome completo"></label>
+        <label class="field"><span>WhatsApp</span><input name="fone" required inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000"></label>
+      </div>
+      <div class="row">
+        <label class="field"><span>Período preferido</span>
+          <select name="periodo"><option>Manhã</option><option>Tarde</option><option>Noite</option><option>Sábado</option></select>
+        </label>
+        <label class="field"><span>Convênio <em>(opcional)</em></span><input name="convenio" placeholder="Particular ou nome do plano"></label>
+      </div>
+      <label class="field"><span>Observações <em>(opcional)</em></span><textarea name="obs" rows="3" placeholder="Conte rapidamente o que está sentindo ou precisa"></textarea></label>
+      <p class="form__error" id="formError" role="alert" hidden>Preencha seu nome e um WhatsApp válido.</p>
+      <button class="btn btn--whats btn--block" type="submit"><svg><use href="#i-whats"/></svg>Enviar pelo WhatsApp</button>
+      <p class="form__note">Ao enviar, abrimos o WhatsApp com a mensagem pronta. Nada é enviado sem a sua confirmação.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= DÚVIDAS ================= -->
+<section class="section section--soft" id="duvidas">
+  <div class="container container--narrow">
+    <div class="section__head reveal">
+      <p class="eyebrow">Dúvidas frequentes</p>
+      <h2>Perguntas que sempre recebemos</h2>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>Vocês atendem convênio?<svg><use href="#i-chev"/></svg></summary><p>Atendemos os principais planos odontológicos e também particular. Informe seu convênio no agendamento e confirmamos a cobertura antes da consulta.</p></details>
+      <details class="reveal"><summary>A avaliação inicial tem custo?<svg><use href="#i-chev"/></svg></summary><p>A primeira avaliação é sem compromisso. Você sai com o diagnóstico e o plano de tratamento por escrito, e decide com calma.</p></details>
+      <details class="reveal"><summary>Atendem urgência no mesmo dia?<svg><use href="#i-chev"/></svg></summary><p>Sim. Em casos de dor, inchaço ou dente quebrado, chame no WhatsApp e encaixamos você no mesmo dia, sempre que possível.</p></details>
+      <details class="reveal"><summary>Quais as formas de pagamento?<svg><use href="#i-chev"/></svg></summary><p>Pix, débito e cartão de crédito em até 12x. Para tratamentos mais longos, montamos um plano de pagamento junto com você.</p></details>
+      <details class="reveal"><summary>A partir de que idade as crianças podem vir?<svg><use href="#i-chev"/></svg></summary><p>A primeira consulta é recomendada quando nasce o primeiro dentinho, por volta dos 6 meses. Quanto antes, mais tranquila fica a relação com o dentista.</p></details>
+      <details class="reveal"><summary>Tem estacionamento?<svg><use href="#i-chev"/></svg></summary><p>Temos convênio com o estacionamento ao lado da clínica, com a primeira hora por nossa conta.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="container cta__inner">
+    <div>
+      <h2>Pronto para cuidar do seu sorriso?</h2>
+      <p>Fale com a Aurora e agende sua avaliação hoje mesmo.</p>
+    </div>
+    <div class="cta__actions">
+      <a data-wa href="#" class="btn btn--whats" target="_blank" rel="noopener"><svg><use href="#i-whats"/></svg>Conversar no WhatsApp</a>
+      <a href="#agendar" class="btn btn--outline-light">Agendar avaliação</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="#topo" class="brand brand--light">
+        <span class="brand__mark"><svg><use href="#i-tooth"/></svg></span>
+        <span class="brand__text"><small>Clínica</small><span>Aurora <em>Odonto</em></span></span>
+      </a>
+      <p>Odontologia completa para toda a família, com cuidado, tecnologia e atendimento humano.</p>
+    </div>
+    <div>
+      <h4>Navegue</h4>
+      <a href="#tratamentos">Tratamentos</a><a href="#clinica">A clínica</a><a href="#equipe">Equipe</a><a href="#duvidas">Dúvidas</a>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <a data-wa href="#" target="_blank" rel="noopener"><svg><use href="#i-whats"/></svg>(11) 90000-0000</a>
+      <span><svg><use href="#i-pin"/></svg>Rua das Acácias, 120 — Centro</span>
+      <span><svg><use href="#i-insta"/></svg>@auroraodonto</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© <span id="ano">2026</span> Aurora Odontologia · Responsável técnica: Dra. Helena Campos · CRO-SP 00.000</span>
+    <span>Site de demonstração — dados fictícios</span>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="#" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg><use href="#i-whats"/></svg></a>
+
+<script src="js/app.js"></script>
+</body>
+</html>

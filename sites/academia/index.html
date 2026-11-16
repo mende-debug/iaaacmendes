@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forja Academia — Forje sua melhor versão</title>
+  <meta name="description" content="Musculação, funcional, cross training, spinning e lutas. Aberta das 5h às 23h. Agende sua aula experimental grátis pelo WhatsApp.">
+  <!-- Site de demonstração: não indexar nos buscadores -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 3l26 15v28L32 61 6 46V18z' fill='%230b0b0c' stroke='%23e5202e' stroke-width='4'/%3E%3Cg fill='%23fff'%3E%3Crect x='14' y='30' width='36' height='4' rx='1'/%3E%3Crect x='17' y='22' width='6' height='20' rx='1.5'/%3E%3Crect x='41' y='22' width='6' height='20' rx='1.5'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Ícones (artefatos de academia) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo" viewBox="0 0 64 64">
+      <path d="M32 4l24.5 14v28L32 60 7.5 46V18z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+      <g fill="currentColor">
+        <rect x="13" y="30" width="38" height="4" rx="1"/>
+        <rect x="17" y="21" width="6" height="22" rx="1.5"/>
+        <rect x="41" y="21" width="6" height="22" rx="1.5"/>
+        <rect x="13" y="25" width="3" height="14" rx="1"/>
+        <rect x="48" y="25" width="3" height="14" rx="1"/>
+      </g>
+    </symbol>
+    <symbol id="i-dumbbell" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 12h10"/><rect x="4" y="7" width="3" height="10" rx="1"/><rect x="17" y="7" width="3" height="10" rx="1"/><path d="M2.5 10v4M21.5 10v4"/></g></symbol>
+    <symbol id="i-kettlebell" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 9.5a3.5 3.5 0 117 0"/><path d="M7.5 9.5h9a5 5 0 012.5 4.3c0 2.6-1.3 5-3 7.2H8c-1.7-2.2-3-4.6-3-7.2a5 5 0 012.5-4.3z"/></g></symbol>
+    <symbol id="i-bike" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path d="M6 17l4-8h5l3 8M9 6h3M10 9l4 8"/></g></symbol>
+    <symbol id="i-glove" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15V8a5 5 0 015-5h2a5 5 0 015 5v4a4 4 0 01-4 4H7z"/><path d="M7 11H5.5A1.5 1.5 0 004 12.5v1A2.5 2.5 0 006.5 16H7M7 16v3a2 2 0 002 2h6a2 2 0 002-2v-3M11 8h4"/></g></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+    <symbol id="i-lotus" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 8v6M6 11l6 3 6-3M8 21l4-7 4 7M5 21h14"/></g></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.5-7 10-7 10z"/><path d="M3 12h4l1.5-2.5 2 5 1.5-2.5h2"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 7v5l3 2"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 4h6v3H9zM7 5.5H5v16h14v-16h-2M8.5 12l2 2 4-4M8.5 17.5h7"/></symbol>
+    <symbol id="i-ticket" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 8a2 2 0 002-2h14a2 2 0 002 2v2a2 2 0 000 4v2a2 2 0 00-2 2H5a2 2 0 00-2-2v-2a2 2 0 000-4zM10 6v12"/></symbol>
+    <symbol id="i-snow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 2v20M4 7l16 10M20 7L4 17M9 3.5L12 6l3-2.5M9 20.5L12 18l3 2.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11zM12 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zM12 16a4 4 0 100-8 4 4 0 000 8zM17.5 6.5h.01"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4 7h3l2-3h6l2 3h3v13H4zM12 17a4 4 0 100-8 4 4 0 000 8z"/></symbol>
+    <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="topo">
+  <div class="container header__inner">
+    <a href="#topo" class="brand" aria-label="Forja Academia — início">
+      <span class="brand__mark"><svg><use href="#logo"/></svg></span>
+      <span class="brand__text">FORJA<small>Academia</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#modalidades">Modalidades</a>
+      <a href="#aulas">Aulas</a>
+      <a href="#planos">Planos</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#experimental" class="btn btn--sm btn--red nav__cta">Aula grátis</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <span class="hero__word" aria-hidden="true">FORJA</span>
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow"><span class="bar"></span>Academia completa · aberta das 5h às 23h</p>
+      <h1>Forje sua <span class="red">melhor</span> versão.</h1>
+      <p class="hero__lead">Estrutura de primeira, professores que acompanham de verdade e aulas para todos os níveis. Do primeiro treino ao recorde pessoal, a gente vai junto.</p>
+      <div class="hero__actions">
+        <a href="#experimental" class="btn btn--red">Agendar aula grátis <svg><use href="#i-arrow"/></svg></a>
+        <a href="#planos" class="btn btn--outline">Ver planos</a>
+      </div>
+      <ul class="hero__perks">
+        <li><svg><use href="#i-ticket"/></svg>Sem taxa de matrícula</li>
+        <li><svg><use href="#i-clipboard"/></svg>Avaliação física inclusa</li>
+        <li><svg><use href="#i-snow"/></svg>Ambiente climatizado</li>
+      </ul>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <svg class="hero__hex" viewBox="0 0 64 64"><path d="M32 4l24.5 14v28L32 60 7.5 46V18z" fill="none" stroke="currentColor" stroke-width=".6"/></svg>
+
+      <!-- Card "Treino de hoje" -->
+      <div class="workout">
+        <div class="workout__head">
+          <span class="workout__badge"><svg><use href="#logo"/></svg></span>
+          <div><small>Treino de hoje</small><strong>Peito e tríceps</strong></div>
+          <span class="workout__tag">Treino A</span>
+        </div>
+        <div class="workout__progress">
+          <div><span>3 de 5 exercícios</span><b>60%</b></div>
+          <i><span style="width:60%"></span></i>
+        </div>
+        <ul class="workout__list">
+          <li class="is-done"><span class="chk"><svg><use href="#i-check"/></svg></span><div><strong>Supino reto</strong><small>4 × 10 · 60 kg</small></div></li>
+          <li class="is-done"><span class="chk"><svg><use href="#i-check"/></svg></span><div><strong>Supino inclinado c/ halteres</strong><small>3 × 12 · 22 kg</small></div></li>
+          <li class="is-done"><span class="chk"><svg><use href="#i-check"/></svg></span><div><strong>Crucifixo na máquina</strong><small>3 × 12 · 45 kg</small></div></li>
+          <li class="is-now"><span class="chk"><svg><use href="#i-dumbbell"/></svg></span><div><strong>Tríceps na corda</strong><small>4 × 12 · 25 kg</small></div><em>Agora</em></li>
+          <li><span class="chk"></span><div><strong>Mergulho no banco</strong><small>3 × 15</small></div></li>
+        </ul>
+        <div class="workout__foot">
+          <span class="avatar avatar--xs">MR</span>
+          <span>Montado pelo prof. Marcos</span>
+          <span class="workout__time"><svg><use href="#i-clock"/></svg>52 min</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="marquee" aria-label="Modalidades">
+    <div class="marquee__track">
+      <span>Musculação</span><svg><use href="#i-bolt"/></svg><span>Funcional</span><svg><use href="#i-bolt"/></svg><span>Cross training</span><svg><use href="#i-bolt"/></svg><span>Spinning</span><svg><use href="#i-bolt"/></svg><span>Muay thai</span><svg><use href="#i-bolt"/></svg><span>HIIT</span><svg><use href="#i-bolt"/></svg><span>Pilates</span><svg><use href="#i-bolt"/></svg>
+      <span aria-hidden="true">Musculação</span><svg><use href="#i-bolt"/></svg><span aria-hidden="true">Funcional</span><svg><use href="#i-bolt"/></svg><span aria-hidden="true">Cross training</span><svg><use href="#i-bolt"/></svg><span aria-hidden="true">Spinning</span><svg><use href="#i-bolt"/></svg><span aria-hidden="true">Muay thai</span><svg><use href="#i-bolt"/></svg><span aria-hidden="true">HIIT</span><svg><use href="#i-bolt"/></svg><span aria-hidden="true">Pilates</span><svg><use href="#i-bolt"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MODALIDADES ================= -->
+<section class="section" id="modalidades">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow"><span class="bar"></span>Modalidades</p>
+      <h2>Escolha seu jeito de <span class="red">treinar</span></h2>
+      <p>Todas as modalidades estão inclusas no plano. Treine o que quiser, quando quiser.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal"><span class="card__num">01</span><span class="card__icon"><svg><use href="#i-dumbbell"/></svg></span><h3>Musculação</h3><p>Área completa com pesos livres, máquinas de última geração e treino montado pelo professor.</p></article>
+      <article class="card reveal"><span class="card__num">02</span><span class="card__icon"><svg><use href="#i-kettlebell"/></svg></span><h3>Funcional e cross</h3><p>Treinos intensos em grupo, com kettlebell, corda e caixa, para ganhar força e condicionamento.</p></article>
+      <article class="card reveal"><span class="card__num">03</span><span class="card__icon"><svg><use href="#i-bike"/></svg></span><h3>Spinning</h3><p>Aulas com música alta e luz baixa. Queima calórica garantida em 45 minutos de pedal.</p></article>
+      <article class="card reveal"><span class="card__num">04</span><span class="card__icon"><svg><use href="#i-glove"/></svg></span><h3>Muay thai</h3><p>Técnica, defesa pessoal e um treino que trabalha o corpo inteiro e alivia o estresse.</p></article>
+      <article class="card reveal"><span class="card__num">05</span><span class="card__icon"><svg><use href="#i-heart"/></svg></span><h3>HIIT</h3><p>Intervalos de alta intensidade em 30 minutos. Ideal para quem tem pouco tempo e quer resultado.</p></article>
+      <article class="card reveal"><span class="card__num">06</span><span class="card__icon"><svg><use href="#i-lotus"/></svg></span><h3>Pilates e alongamento</h3><p>Fortalecimento, postura e mobilidade, para treinar melhor e prevenir lesões.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ESTRUTURA ================= -->
+<section class="section section--light" id="estrutura">
+  <div class="container split">
+    <div class="split__copy reveal">
+      <p class="eyebrow eyebrow--dark"><span class="bar"></span>Estrutura</p>
+      <h2>Espaço de sobra para você evoluir</h2>
+      <p>Dois andares climatizados, equipamentos novos e uma área de peso livre que não fica lotada. Tudo pensado para você treinar com conforto, segurança e sem fila nos aparelhos.</p>
+      <dl class="stats">
+        <div><dt data-count="1200">1.200</dt><dd>m² de área de treino</dd></div>
+        <div><dt data-count="150" data-suffix="+">150+</dt><dd>aparelhos e estações</dd></div>
+        <div><dt data-count="18" data-suffix="h">18h</dt><dd>aberta por dia</dd></div>
+      </dl>
+    </div>
+    <div class="mosaic reveal" aria-label="Fotos da academia">
+      <figure class="ph ph--tall"><svg><use href="#i-dumbbell"/></svg><figcaption>Peso livre</figcaption></figure>
+      <figure class="ph ph--red"><svg><use href="#i-bike"/></svg><figcaption>Sala de bike</figcaption></figure>
+      <figure class="ph"><svg><use href="#i-glove"/></svg><figcaption>Tatame</figcaption></figure>
+      <figure class="ph ph--wide"><svg><use href="#i-camera"/></svg><figcaption>Área de máquinas</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GRADE DE AULAS ================= -->
+<section class="section section--deep" id="aulas">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow"><span class="bar"></span>Grade de aulas</p>
+      <h2>Tem aula no seu <span class="red">horário</span></h2>
+    </div>
+    <div class="schedule reveal">
+      <div class="tabs" role="tablist" aria-label="Dias da semana">
+        <button role="tab" data-day="seg" aria-selected="true">Seg</button>
+        <button role="tab" data-day="ter" aria-selected="false">Ter</button>
+        <button role="tab" data-day="qua" aria-selected="false">Qua</button>
+        <button role="tab" data-day="qui" aria-selected="false">Qui</button>
+        <button role="tab" data-day="sex" aria-selected="false">Sex</button>
+        <button role="tab" data-day="sab" aria-selected="false">Sáb</button>
+      </div>
+      <ul class="classes" id="classes" role="tabpanel" aria-live="polite"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLANOS ================= -->
+<section class="section" id="planos">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow"><span class="bar"></span>Planos</p>
+      <h2>Sem matrícula. Sem letra miúda.</h2>
+      <p>Todos os planos dão acesso livre a musculação e a todas as aulas coletivas.</p>
+    </div>
+    <div class="plans">
+      <article class="plan reveal">
+        <h3>Mensal</h3>
+        <p class="plan__price"><small>R$</small>129<span>/mês</span></p>
+        <p class="plan__note">Sem fidelidade</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Musculação e todas as aulas</li>
+          <li><svg><use href="#i-check"/></svg>Avaliação física inicial</li>
+          <li><svg><use href="#i-check"/></svg>Treino montado pelo professor</li>
+        </ul>
+        <a href="#experimental" data-plano="Mensal" class="btn btn--outline btn--block">Quero esse</a>
+      </article>
+      <article class="plan plan--featured reveal">
+        <span class="plan__tag">Melhor custo</span>
+        <h3>Anual</h3>
+        <p class="plan__price"><small>R$</small>89<span>/mês</span></p>
+        <p class="plan__note">12x no cartão, sem comprometer o limite</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Tudo do plano mensal</li>
+          <li><svg><use href="#i-check"/></svg>Avaliação física a cada 3 meses</li>
+          <li><svg><use href="#i-check"/></svg>Leve um amigo 2x por mês</li>
+          <li><svg><use href="#i-check"/></svg>30 dias de férias no ano</li>
+        </ul>
+        <a href="#experimental" data-plano="Anual" class="btn btn--red btn--block">Quero esse</a>
+      </article>
+      <article class="plan reveal">
+        <h3>Semestral</h3>
+        <p class="plan__price"><small>R$</small>109<span>/mês</span></p>
+        <p class="plan__note">6x no cartão</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Tudo do plano mensal</li>
+          <li><svg><use href="#i-check"/></svg>Reavaliação física no 3º mês</li>
+          <li><svg><use href="#i-check"/></svg>15 dias de férias</li>
+        </ul>
+        <a href="#experimental" data-plano="Semestral" class="btn btn--outline btn--block">Quero esse</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMC ================= -->
+<section class="section section--deep">
+  <div class="container split split--imc">
+    <div class="split__copy reveal">
+      <p class="eyebrow"><span class="bar"></span>Ponto de partida</p>
+      <h2>Calcule seu IMC em segundos</h2>
+      <p>O índice de massa corporal é só um ponto de partida. Na avaliação física da Forja medimos também percentual de gordura, massa muscular e medidas, para montar o treino certo para você.</p>
+    </div>
+    <form class="imc reveal" id="imc" novalidate>
+      <div class="row">
+        <label class="field"><span>Peso (kg)</span><input name="peso" inputmode="decimal" placeholder="Ex.: 78"></label>
+        <label class="field"><span>Altura (cm)</span><input name="altura" inputmode="numeric" placeholder="Ex.: 175"></label>
+      </div>
+      <button class="btn btn--red btn--block" type="submit">Calcular</button>
+      <div class="imc__result" id="imcResult" aria-live="polite" hidden>
+        <span class="imc__value" id="imcValue">0</span>
+        <div><strong id="imcLabel"></strong><small>Valores de referência da OMS para adultos. Não substitui a avaliação de um profissional.</small></div>
+      </div>
+      <div class="imc__scale" aria-hidden="true"><span></span><span></span><span></span><span></span><i id="imcPin"></i></div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= EQUIPE ================= -->
+<section class="section" id="equipe">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow"><span class="bar"></span>Equipe</p>
+      <h2>Professores que te acompanham</h2>
+    </div>
+    <div class="team">
+      <article class="member reveal"><span class="avatar">MR</span><div><h3>Marcos Ribeiro</h3><p>Musculação e hipertrofia</p><small>CREF 000000-G/SP</small></div></article>
+      <article class="member reveal"><span class="avatar">JL</span><div><h3>Juliana Lima</h3><p>Funcional e HIIT</p><small>CREF 000000-G/SP</small></div></article>
+      <article class="member reveal"><span class="avatar">DS</span><div><h3>Diego Santos</h3><p>Muay thai</p><small>CREF 000000-G/SP</small></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AULA EXPERIMENTAL ================= -->
+<section class="section section--light" id="experimental">
+  <div class="container split split--form">
+    <div class="split__copy reveal">
+      <p class="eyebrow eyebrow--dark"><span class="bar"></span>Aula experimental</p>
+      <h2>Venha treinar com a gente. A primeira é por nossa conta.</h2>
+      <p>Conte seu objetivo e escolha o melhor horário. A recepção confirma pelo WhatsApp.</p>
+      <ul class="contact">
+        <li><span><svg><use href="#i-whats"/></svg></span><div><small>WhatsApp</small><a data-wa href="#">(11) 90000-0000</a></div></li>
+        <li><span><svg><use href="#i-pin"/></svg></span><div><small>Endereço</small><strong>Rua da Força, 500 — Centro</strong></div></li>
+        <li><span><svg><use href="#i-clock"/></svg></span><div><small>Horários</small><strong>Seg a sex 5h–23h · Sáb 8h–18h · Dom 8h–12h</strong></div></li>
+        <li><span><svg><use href="#i-insta"/></svg></span><div><small>Instagram</small><strong>@forjaacademia</strong></div></li>
+      </ul>
+    </div>
+
+    <form class="form reveal" id="form" novalidate>
+      <h3>Agendar aula grátis</h3>
+      <fieldset class="chips">
+        <legend>Seu objetivo</legend>
+        <label><input type="radio" name="objetivo" value="Emagrecer" checked><span>Emagrecer</span></label>
+        <label><input type="radio" name="objetivo" value="Ganhar massa"><span>Ganhar massa</span></label>
+        <label><input type="radio" name="objetivo" value="Condicionamento"><span>Condicionamento</span></label>
+        <label><input type="radio" name="objetivo" value="Saúde e bem-estar"><span>Saúde</span></label>
+        <label><input type="radio" name="objetivo" value="Luta"><span>Luta</span></label>
+      </fieldset>
+      <div class="row">
+        <label class="field"><span>Seu nome</span><input name="nome" required autocomplete="name" placeholder="Nome completo"></label>
+        <label class="field"><span>WhatsApp</span><input name="fone" required inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000"></label>
+      </div>
+      <div class="row">
+        <label class="field"><span>Modalidade</span>
+          <select name="modalidade"><option>Musculação</option><option>Funcional e cross</option><option>Spinning</option><option>Muay thai</option><option>HIIT</option><option>Pilates</option></select>
+        </label>
+        <label class="field"><span>Período</span>
+          <select name="periodo"><option>Manhã cedo (5h–8h)</option><option>Manhã</option><option>Almoço</option><option>Tarde</option><option>Noite</option></select>
+        </label>
+      </div>
+      <input type="hidden" name="plano" value="">
+      <p class="form__plano" id="formPlano" hidden></p>
+      <p class="form__error" id="formError" role="alert" hidden>Preencha seu nome e um WhatsApp válido.</p>
+      <button class="btn btn--red btn--block" type="submit"><svg><use href="#i-whats"/></svg>Agendar pelo WhatsApp</button>
+      <p class="form__note">Ao enviar, abrimos o WhatsApp com a mensagem pronta. Nada é enviado sem a sua confirmação.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= DÚVIDAS ================= -->
+<section class="section" id="duvidas">
+  <div class="container container--narrow">
+    <div class="section__head reveal">
+      <p class="eyebrow"><span class="bar"></span>Dúvidas</p>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>Preciso de atestado médico?<svg><use href="#i-chev"/></svg></summary><p>Pedimos que você responda um questionário de saúde (PAR-Q) na avaliação. Se houver alguma indicação, solicitamos liberação médica antes de começar.</p></details>
+      <details class="reveal"><summary>Nunca treinei. Vou conseguir acompanhar?<svg><use href="#i-chev"/></svg></summary><p>Com certeza. Todo aluno começa com avaliação física e um treino adaptado ao seu nível, e os professores acompanham na área de musculação.</p></details>
+      <details class="reveal"><summary>Posso cancelar quando quiser?<svg><use href="#i-chev"/></svg></summary><p>No plano mensal, sim, sem multa. Nos planos semestral e anual, as condições de cancelamento ficam claras no contrato, antes de você assinar.</p></details>
+      <details class="reveal"><summary>Tem estacionamento e vestiário?<svg><use href="#i-chev"/></svg></summary><p>Sim. Estacionamento gratuito para alunos durante o treino e vestiários com chuveiro quente e armários.</p></details>
+      <details class="reveal"><summary>A aula experimental é mesmo grátis?<svg><use href="#i-chev"/></svg></summary><p>É sim. Você agenda, vem treinar e decide depois, sem compromisso.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="container cta__inner">
+    <div>
+      <h2>O melhor treino é o que começa hoje.</h2>
+      <p>Agende sua aula grátis e conheça a Forja.</p>
+    </div>
+    <div class="cta__actions">
+      <a data-wa href="#" class="btn btn--white"><svg><use href="#i-whats"/></svg>Chamar no WhatsApp</a>
+      <a href="#planos" class="btn btn--outline">Ver planos</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="#topo" class="brand">
+        <span class="brand__mark"><svg><use href="#logo"/></svg></span>
+        <span class="brand__text">FORJA<small>Academia</small></span>
+      </a>
+      <p>Academia completa para quem quer evoluir com estrutura, método e acompanhamento.</p>
+    </div>
+    <div class="footer__links">
+      <h4>Navegue</h4>
+      <a href="#modalidades">Modalidades</a><a href="#aulas">Aulas</a><a href="#planos">Planos</a><a href="#equipe">Equipe</a>
+    </div>
+    <div class="footer__links">
+      <h4>Contato</h4>
+      <a data-wa href="#"><svg><use href="#i-whats"/></svg>(11) 90000-0000</a>
+      <span><svg><use href="#i-pin"/></svg>Rua da Força, 500 — Centro</span>
+      <span><svg><use href="#i-insta"/></svg>@forjaacademia</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© <span id="ano">2026</span> Forja Academia · Responsável técnico: Marcos Ribeiro · CREF 000000-G/SP</span>
+    <span>Site de demonstração — dados fictícios</span>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="#" aria-label="Conversar no WhatsApp"><svg><use href="#i-whats"/></svg></a>
+
+<script src="js/app.js"></script>
+</body>
+</html>
