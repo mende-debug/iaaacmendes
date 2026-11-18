@@ -44,7 +44,7 @@ Cada site tem o próprio link, com o nome do estabelecimento:
 | Grão & Prosa | https://grao-e-prosa.demo-clientes.workers.dev |
 | Dr. Rafael Teixeira | https://rafael-teixeira-advogado.demo-clientes.workers.dev |
 | Almeida & Torres Advogados | https://almeida-torres-advogados.demo-clientes.workers.dev |
-| Balcão 47 (cardápio) | https://balcao-47-cardapio.demo-clientes.workers.dev (após publicar) |
+| Balcão 47 (cardápio) | https://balcao47-cardapio.demo-clientes.workers.dev |
 
 **Publicar ou atualizar esses links:** rode `node deploy/workers/publicar.mjs`, ou `node deploy/workers/publicar.mjs odonto` para um site só. O script precisa das variáveis `CLOUDFLARE_API_TOKEN` (permissão *Workers Scripts: Edit*) e `CLOUDFLARE_ACCOUNT_ID`. Os nomes dos links ficam em `deploy/workers/sites.json`.
 
