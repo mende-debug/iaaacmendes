@@ -11,6 +11,7 @@ Modelos de sites prontos para mostrar a clientes, com **dados fictícios** e mar
 | 5 | `sites/cafeteria` | Cafeteria / padaria | Cardápio em lousa, sacola de pedido, encomendas |
 | 6 | `sites/advogado` | Landing page de advogado | Foco em contato, segue o Provimento 205/2021 da OAB |
 | 7 | `sites/advocacia` | Escritório de advocacia | Áreas, sócios, artigos, segue o Provimento 205/2021 da OAB |
+| 8 | `sites/balcao47` | Cardápio digital (QR code de mesa) | Balcão 47: abas que acompanham a rolagem, busca, selos "Mais pedido" e "Serve N" |
 
 <p>
 <img src="docs/capturas/1-odonto.jpg" width="49%"> <img src="docs/capturas/2-barbearia.jpg" width="49%">
@@ -43,6 +44,7 @@ Cada site tem o próprio link, com o nome do estabelecimento:
 | Grão & Prosa | https://grao-e-prosa.demo-clientes.workers.dev |
 | Dr. Rafael Teixeira | https://rafael-teixeira-advogado.demo-clientes.workers.dev |
 | Almeida & Torres Advogados | https://almeida-torres-advogados.demo-clientes.workers.dev |
+| Balcão 47 (cardápio) | https://balcao-47-cardapio.demo-clientes.workers.dev (após publicar) |
 
 **Publicar ou atualizar esses links:** rode `node deploy/workers/publicar.mjs`, ou `node deploy/workers/publicar.mjs odonto` para um site só. O script precisa das variáveis `CLOUDFLARE_API_TOKEN` (permissão *Workers Scripts: Edit*) e `CLOUDFLARE_ACCOUNT_ID`. Os nomes dos links ficam em `deploy/workers/sites.json`.
 
